@@ -20,19 +20,20 @@
 			border-right:1px	solid	gray;
 		}
 		.title{
-
+			
 		}
 		header{
 			background-image: url(ouj.jpg);
 			height:500px;
-			background-size:100% 100%;
+			background-size:cover;
+			background-position: center;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-		align-items: center; 
+			align-items: center; 
 		}
 		h1{
-			font-size:50px;
+			font-size: 100px;
 			text-align:center;
 			font-family:serif;
 			color:white;
@@ -47,6 +48,7 @@
 		aside{
 			display: grid;
 			grid-template-columns:50% 50%;
+			padding:0.5em;
 		}
 		section{
 			padding:0.5em;
@@ -68,12 +70,15 @@
 			font-size:30px;
 			background-color:pink;
 			box-shadow: 3px 3px 3px gray;
-			text-shadow: -2px -2px 2px white;
+		
 			text-decoration: none;
 			text-align: center;
 			margin:0 auto;
 			transition:all 0.5s linear;
 			color:blueviolet;
+		}
+		.shadow{
+			text-shadow: -2px -2px 2px white;
 		}
 		main a:hover{
 			transform: scale(1.05);
@@ -85,6 +90,12 @@
 			background-color:#aaa;
 		}
 		footer p{text-align: center;margin:0;}
+
+		@media(max-width:980px){
+			#wrap{width:100%;}
+			aside{display:block;}
+			h1{font-size:10vw;}
+		}
 	</style>
 </head>
 <body>
@@ -99,14 +110,14 @@
 			</header>
 
 			<main>
-				<a target="_blank" href="https://twitter.com/search?q=%23ouj2019%20%23%E6%94%BE%E9%80%81%E5%A4%A7%E5%AD%A6%20https%3A%2F%2Fbit.ly%2F2QvY7w1&src=typd">tweet</a>
+				<a target="_blank" href="https://twitter.com/search?q=%23ouj2019%20%23%E6%94%BE%E9%80%81%E5%A4%A7%E5%AD%A6%20https%3A%2F%2Fbit.ly%2F2QvY7w1&src=typd">👨‍🎓<span class="shadow">入場する</span>👩‍🎓</a>
 			</main>
 			<aside>
 			
 				<section>
 					<h3>日時・場所</h3>
 					<ul>
-						<li>日時：2020/3/26(土)14:00-14:30</li>
+						<li>日時：2020/3/21(土)14:00-14:30</li>
 						<li>場所：Twitter</li>
 					</ul>
 			
@@ -118,7 +129,7 @@
 						<li>14:20 学歌tweet</li>
 						<li>14:30 閉会のtweet</li>
 					</ol>
-					<h3>参考</h3>
+					<h3>前回</h3>
 					<p>東日本大震災(平成22年度)の<a target="_blank" href="http://ouj0326.web.fc2.com/">WEB卒業式</a>・
 						<a href="https://togetter.com/li/116200">Togetter</a></p>
 				</section>
@@ -132,8 +143,7 @@
 			
 					<h3>お願い</h3>
 					<p>tweetですので、緩めの時間で進行します。</p>
-					<p>司会進行は nakashimmer が行います。</p>
-					<p>心理と教育コース在学<a href="https://twitter.com/nakashimmer" target="_blank">nakashimmer</a></p>
+					<p>司会進行は <a href="https://twitter.com/nakashimmer" target="_blank">nakashimmer(心理と教育コース在学)</a>が行います。</p>
 				</section>
 			
 			</aside>
