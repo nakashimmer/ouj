@@ -8,6 +8,9 @@
 		*{
 			margin:0;padding:0;
 			list-style-type:none;
+			text-align:justify;
+			text-justify:inter-ideograph;
+			word-break: break-all;
 		}
 		#wrap{
 			font-size:16px;
@@ -16,21 +19,29 @@
 			border-left:1px	solid	gray;
 			border-right:1px	solid	gray;
 		}
+		.title{
+
+		}
 		header{
 			background-image: url(ouj.jpg);
 			height:500px;
 			background-size:100% 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		align-items: center; 
 		}
 		h1{
-			line-height:300px;
 			font-size:50px;
 			text-align:center;
 			font-family:serif;
 			color:white;
+			text-shadow: 2px 2px 2px black;
 		}
 		h2{
 			font-size:20px;text-align:center;font-family:serif;
 			color:white;
+			text-shadow: 2px 2px 2px black;
 		}
 
 		.flex{
@@ -39,7 +50,7 @@
 		.flex aside{
 			flex:1;
 		}
-		.flex main{
+		.flex #left{
 			flex:2;
 		}
 		section{
@@ -53,52 +64,60 @@
 </head>
 <body>
 	<div	id="wrap">
-		<header>
-			<h1>令和元年度	放送大学Web卒業式</h1>
-			<h2>放送大学有志</h2>
-		</header>
+
 		<div class="flex">
-
-			<main>
-				<script src="https://zawazawa.jp/em/js/include?t=ouj%2F1&h=200&size=10"></script>
-			</main>
-
+			<div id="left">
+				<header>
+					<div class="title">
+						<h1>令和元年度<br>放送大学Web卒業式</h1>
+						<h2>放送大学有志</h2>
+					</div>
+				</header>
+				<main>
+					<script src="https://zawazawa.jp/em/js/include?t=ouj%2F1&h=200&size=10"></script>
+				</main>
+			</div>
 			<aside>
 				<section>
-					<a target="_blank" href="http://ouj0326.web.fc2.com/">平成22年度放送大学WEB卒業式</a>
+					<a target="_blank" href="http://ouj0326.web.fc2.com/">東日本大震災(平成22年度)のWEB卒業式</a>
 				</section>
 				<section>
 					<h3>日時・場所</h3>
 					<ul>
-						<li>[日時] 2020/3/26(土)14:00-14:30</li>
-						<li>[場所] https://nakashimmer.github.io/ouj/</li>
+						<li>[日時] <br>2020/3/26(土)14:00-14:30</li>
+						<li>[場所]<br> https://nakashimmer.github.io/ouj/</li>
 					</ul>
 				</section>
 				<section>
 					<h3>式次第</h3>
 					<ol>
 						<li>14:00 開会の辞</li>
-						<li>14:01 @__obake 名誉学長からお祝いtweet</li>
-						<li>14:10 卒業おめでとう(卒業生、在校生、教職員によるtweet)</li>
-						<li>14:20 学歌tweet</li>
+						<li>14:01 <a href="https://twitter.com/__obake">👻</a>名誉学長からお祝いの投稿</li>
+						<li>14:10 卒業おめでとう(卒業生、在校生、教職員による投稿)</li>
+						<li>14:20 学歌投稿</li>
 						<li>14:30 閉会の辞</li>
 					</ol>
 				</section>
 				<section>
 					<h3>メッセージ</h3>
 					<p>放送大学学位記授与式は、コロナウイルスのため、中止になりました。
-						NHKホールでの卒業式を楽しみにしていた卒業生も多いと思いますが、 やむを得ません。</p>
-					<p>そこで、3月21日、14時から、WEB卒業式を行いませんか？ 「卒業おめでとう!」をお互いにみんなでtweetしましょう。</p>
-					<p>心理と教育コース在学<a href="https://twitter.com/nakashimmer" target="_blank">nakashimmer</a></p>
+						NHKホールでの卒業式を楽しみにしていた卒業生も多いと思いますが、残念です。</p>
+					<p>そこで、3月21日、14時から、WEB卒業式を行いませんか？ 「卒業おめでとう!」をお互いにみんなで投稿しましょう。</p>
+					
 				</section>
 				<section>
 					<h3>お願い</h3>
-					<p>twitterですので、緩めの時間で進行します。</p>
+					<p>Webですので、緩めの時間で進行します。</p>
 					<p>司会進行は nakashimmer が行います。</p>
+					<p>心理と教育コース在学<a href="https://twitter.com/nakashimmer" target="_blank">nakashimmer</a></p>
+				</section>
+				<section>
+					<p>ログインはtwitterアカウントで行ってください。zawazawaという無料掲示板のシステムを利用しているので、ログアウトは<a href="https://zawazawa.jp/ouj/topic/1">こちらのページ</a>で行ってください。</p>
 				</section>
 			</aside>
-
-
 		</div>
+		<footer>
+			<p><small>(C)Nakashima</small></p>
+		</footer>
 </body>
 </html>
