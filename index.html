@@ -44,96 +44,104 @@
 			text-shadow: 2px 2px 2px black;
 		}
 
-		.flex{
-			display:flex;
-		}
-		.flex aside{
-			flex:1;
-		}
-		.flex #left{
-			flex:2;
+		aside{
+			display: grid;
+			grid-template-columns:50% 50%;
 		}
 		section{
 			padding:0.5em;
-			border-left:1px	solid	gray;
-			border-bottom:1px	solid	gray;
+			border:1px	solid	gray;
+			margin:0.5em;
 		}
 		p,li{margin:0.5em 0;}
 		main{margin:0.5em;}
-		ul li:before{content:"🌸"}
+		main p{
+			text-align: center;
+			}
+		main a{
+			display:block;
+			border:1px solid gray;
+			border-radius:10px;
+			width:300px;
+			padding:0.3em;
+			margin:1em;
+			font-size:30px;
+			background-color:pink;
+			box-shadow: 3px 3px 3px gray;
+			text-shadow: -2px -2px 2px white;
+			text-decoration: none;
+			text-align: center;
+			margin:0 auto;
+			transition:all 0.5s linear;
+			color:blueviolet;
+		}
+		main a:hover{
+			transform: scale(1.05);
+		}
+		aside ul li:before{content:"🌸"}
 		.b{color:red;font-weight:bold;}
+		ul,ol{margin-left: 0.5em;}
+		footer{
+			background-color:#aaa;
+		}
+		footer p{text-align: center;margin:0;}
 	</style>
 </head>
 <body>
 	<div	id="wrap">
 
-		<div class="flex">
-			<div id="left">
-				<header>
-					<div class="title">
-						<h1>令和元年度<br>放送大学Web卒業式</h1>
-						<h2>放送大学生有志主催</h2>
-					</div>
-				</header>
-				<main>
-					<ul>
-						<li>
-							<a target="_blank" href="https://twitter.com/search?q=%23ouj2019">Twitterへのリンク</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/intent/tweet?button_hashtag=ouj2019&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #ouj2019</a>
-						</li>
-					</ul>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</main>
-			</div>
-			<aside>
-				<section>
-					<h3>利用について</h3>
-					<p>zawazawaという無料掲示板のシステムを利用しています。<span class="b">ログインは不要</span>です。ハンドルネームは本名ではなく、ニックネームなどにしてください。利用にあたっては自己責任でお願いします。</p>
-				</section>
+		
+			<header>
+				<div class="title">
+					<h1>令和元年度<br>放送大学Web卒業式</h1>
+					<h2>放送大学生有志主催</h2>
+				</div>
+			</header>
 
+			<main>
+				<a target="_blank" href="https://twitter.com/search?q=%23ouj2019%20%23%E6%94%BE%E9%80%81%E5%A4%A7%E5%AD%A6%20https%3A%2F%2Fbit.ly%2F2QvY7w1&src=typd">tweet</a>
+			</main>
+			<aside>
+			
 				<section>
 					<h3>日時・場所</h3>
 					<ul>
 						<li>日時：2020/3/26(土)14:00-14:30</li>
-						<li>場所：on the Website</li>
+						<li>場所：Twitter</li>
 					</ul>
-				</section>
-
-				<section>
-					東日本大震災(平成22年度)の<br><a target="_blank" href="http://ouj0326.web.fc2.com/">WEB卒業式</a>・
-					<a href="https://togetter.com/li/116200">Togetter</a>
-				</section>
-
-				<section>
+			
 					<h3>式次第</h3>
 					<ol>
 						<li>14:00 開会の辞</li>
-						<li>14:01 <a href="https://twitter.com/__obake">👻</a>前学長・名誉教授・学生からお祝いの投稿</li>
-						<li>14:10 卒業おめでとう(卒業生、在校生、教職員による投稿)</li>
-						<li>14:20 学歌投稿</li>
-						<li>14:30 閉会の辞</li>
+						<li>14:01 <a href="https://twitter.com/__obake">👻</a>前学長・名誉教授・学生からお祝いのtweet</li>
+						<li>14:10 卒業おめでとう(卒業生、在校生、教職員によるtweet)</li>
+						<li>14:20 学歌tweet</li>
+						<li>14:30 閉会のtweet</li>
 					</ol>
+					<h3>参考</h3>
+					<p>東日本大震災(平成22年度)の<a target="_blank" href="http://ouj0326.web.fc2.com/">WEB卒業式</a>・
+						<a href="https://togetter.com/li/116200">Togetter</a></p>
 				</section>
+			
+			
 				<section>
 					<h3>メッセージ</h3>
 					<p>放送大学学位記授与式は、コロナウイルスのため、中止になりました。
 						NHKホールでの卒業式を楽しみにしていた卒業生も多いと思いますが、残念です。</p>
-					<p>そこで、3月21日、14時から、WEB卒業式を行いませんか？ 「卒業おめでとう!」をお互いにみんなで投稿しましょう。</p>
-					
-				</section>
-				<section>
+					<p>そこで、3月21日、14時から、WEB卒業式を行いませんか？ 「卒業おめでとう!」をお互いにみんなでtweetしましょう。</p>
+			
 					<h3>お願い</h3>
-					<p>Webですので、緩めの時間で進行します。</p>
+					<p>tweetですので、緩めの時間で進行します。</p>
 					<p>司会進行は nakashimmer が行います。</p>
 					<p>心理と教育コース在学<a href="https://twitter.com/nakashimmer" target="_blank">nakashimmer</a></p>
 				</section>
-
+			
 			</aside>
-		</div>
+
 		<footer>
 			<p><small>(C)Nakashima</small></p>
 		</footer>
+
+	</div>
 </body>
 </html>
