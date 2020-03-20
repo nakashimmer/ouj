@@ -30,7 +30,7 @@
 		align-items: center; 
 		}
 		h1{
-			font-size:50px;
+			font-size:100px;
 			text-align:center;
 			font-family:serif;
 			color:white;
@@ -48,45 +48,52 @@
 		.flex aside{
 			flex:1;
 		}
-		.flex #left{
+		.flex #right{
 			flex:2;
 		}
 		section{
 			padding:0.5em;
-			border-left:1px	solid	gray;
+			border-right:1px	solid	gray;
 			border-bottom:1px	solid	gray;
+		}
+		main section{
+			border:none;
 		}
 		p,li{margin:0.5em 0;}
 		main{margin:0.5em;}
 		ul li:before{content:"🌸"}
 		.b{color:red;font-weight:bold;}
+		.redBorder{
+			border: 2px solid red;
+			border-radius:0.5em;
+		}
+
+		@media(max-width:980px){
+			#wrap{width:100%;}
+			aside{display:block;}
+			h1{font-size:10vw;}
+			.flex{display:block;}
+		}
 	</style>
 </head>
 <body>
 	<div	id="wrap">
 
-		<div class="flex">
-			<div id="left">
-				<header>
-					<div class="title">
-						<h1>令和元年度<br>放送大学Web卒業式</h1>
-						<h2>放送大学生有志主催</h2>
-					</div>
-				</header>
-				<main>
-					<script src="https://zawazawa.jp/em/js/include?t=ouj%2F1&h=200&size=10"></script>
-				</main>
+		<header>
+			<div class="title">
+				<h1>令和元年度<br>放送大学Web卒業式</h1>
+				<h2>放送大学生有志主催</h2>
 			</div>
+		</header>
+
+		<div class="flex">
+
 			<aside>
-				<section>
-					<h3>利用について</h3>
-					<p>zawazawaという無料掲示板のシステムを利用しています。<span class="b">ログインは不要</span>です。ハンドルネームは本名ではなく、ニックネームなどにしてください。利用にあたっては自己責任でお願いします。</p>
-				</section>
 
 				<section>
 					<h3>日時・場所</h3>
 					<ul>
-						<li>日時：2020/3/26(土)14:00-14:30</li>
+						<li>日時：2020/3/21(土)13:00-13:30</li>
 						<li>場所：on the Website</li>
 					</ul>
 				</section>
@@ -99,18 +106,18 @@
 				<section>
 					<h3>式次第</h3>
 					<ol>
-						<li>14:00 開会の辞</li>
-						<li>14:01 <a href="https://twitter.com/__obake">👻</a>前学長・名誉教授・学生からお祝いの投稿</li>
-						<li>14:10 卒業おめでとう(卒業生、在校生、教職員による投稿)</li>
-						<li>14:20 学歌投稿</li>
-						<li>14:30 閉会の辞</li>
+						<li>13:00 開会の辞</li>
+						<li>13:01 <a href="https://twitter.com/__obake">👻</a>前学長<sub>兼</sub>名誉教授<sub>兼</sub>学生さんからお祝いのtweet</li>
+						<li>13:10 卒業おめでとう(卒業生、在校生、教職員によるtweet)</li>
+						<li>13:20 <a target="_blank" href="https://www.ouj.ac.jp/hp/gaiyo/school_song.html">学歌tweet</a></li>
+						<li>13:30 閉会の辞</li>
 					</ol>
 				</section>
 				<section>
 					<h3>メッセージ</h3>
 					<p>放送大学学位記授与式は、コロナウイルスのため、中止になりました。
 						NHKホールでの卒業式を楽しみにしていた卒業生も多いと思いますが、残念です。</p>
-					<p>そこで、3月21日、14時から、WEB卒業式を行いませんか？ 「卒業おめでとう!」をお互いにみんなで投稿しましょう。</p>
+					<p>そこで、3月21日、13時から、WEB卒業式を行いませんか？ 「卒業おめでとう!」をお互いにみんなでtweetしましょう。</p>
 					
 				</section>
 				<section>
@@ -121,6 +128,31 @@
 				</section>
 
 			</aside>
+
+			<div id="right">
+
+				<main>
+					<section class="redBorder">
+						<h3>利用について</h3>
+						<p>zawazawaという無料掲示板のシステムを利用しています。</p>
+						<ul>
+							<li><span class="b">ログインは不要</span>です。</li>
+							<li>ハンドルネームは本名ではなく、ニックネームなどにしてください。</li>
+							<li>利用にあたっては自己責任でお願いします。</li>
+						</ul>
+					</section>
+					<script src="https://zawazawa.jp/em/js/include?t=ouj%2F1&h=200&size=10"></script>
+					<section  class="redBorder">
+						<h3>利用について</h3>
+						<p>zawazawaという無料掲示板のシステムを利用しています。</p>
+						<ul>
+							<li><span class="b">ログインは不要</span>です。</li>
+							<li>ハンドルネームは本名ではなく、ニックネームなどにしてください。</li>
+							<li>利用にあたっては自己責任でお願いします。</li>
+						</ul>
+					</section>
+				</main>
+			</div>
 		</div>
 		<footer>
 			<p><small>(C)Nakashima</small></p>
